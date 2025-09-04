@@ -29,7 +29,7 @@
     
     printf("\n");
     
-    //Inserir informações da carta 02
+    //Inserir informações da carta 002
     printf("Carta 02: \n");
     printf("Estado (A-H): ");
     scanf(" %c", &estado2);
