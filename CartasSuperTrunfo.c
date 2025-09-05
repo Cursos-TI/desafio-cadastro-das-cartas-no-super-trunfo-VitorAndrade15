@@ -60,37 +60,20 @@
     pibpercapta1 = (pib1 * 1000000000) / populacao1;
     pibpercapta2 = (pib2 * 1000000000) / populacao2;
     
-    //Informações apresentadas em tela ao usuário (carta 01):
-    printf("Carta 01: \n");
-    printf("Estado: %c\n", estado1);
-    printf("Código: %s\n", codigo1);
-    printf("Nome da Cidade: %s\n", nome1);
-    printf("População: %d\n", populacao1);
-    printf("Área: %.2f km²\n", area1);
-    printf("PIB: %.2f Bilhões de reais\n", pib1);
-    printf("Números de Pontos Turísticos: %d\n", pontosturisticos1);
-    printf("Densidade Populacional: %.2f\n", densidade1);
-    printf("PIB per Capta: %.2f\n", pibpercapta1);
+    //Informações comparativas (População):
     
-    printf("\n");
+    printf("Comparação das cartas (Atributo População): \n");
+    printf("Carta 1 - %s, %d \n", nome1, populacao1);
+    printf("Carta 2 - %s, %d \n", nome2, populacao2);
     
-    //Informações apresentadas em tela ao usuário (carta 02):
-    printf("Carta 02: \n");
-    printf("Estado: %c\n", estado2);
-    printf("Código: %s\n", codigo2);
-    printf("Nome da Cidade: %s\n", nome2);
-    printf("População: %d\n", populacao2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f Bilhões de reais\n", pib2);
-    printf("Números de Pontos Turísticos: %d\n", pontosturisticos2);
-    printf("Densidade Populacional: %.2f\n", densidade2);
-    printf("PIB per Capta: %.2f\n", pibpercapta2);
-
-    //Comparação das cartas
-    printf("Comparação de cartas: \n");
-    printf("População: Carta 1 venceu"
-        populacao1 > populacao2 ? 1 : 2,
-        populacao1 > populacao2);
+    if (populacao1 > populacao2) {
+    
+    printf("Resultado: Carta 1 (%s) venceu\n", nome1);
+    }
+    else {
+    printf("Resultado: Carta 2 (%s) venceu\n", nome2);
+    }
+    
     
         return 0;
     
